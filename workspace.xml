@@ -1,0 +1,52 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="workspaceBlocks" style="display: none">
+  <block type="import" id="c)**(I%f~62ZL6,HsrW6" x="37" y="62">
+    <field name="import">CHaser</field>
+    <next>
+      <block type="function" id="w{eRGm)/6F*J:$#AA_,j">
+        <field name="function_name">main</field>
+        <statement name="NAME">
+          <block type="init_func" id="L$-f8i`:`64IZ6uDRv`3">
+            <field name="port">2009</field>
+            <field name="user">sample</field>
+            <field name="host">127.0.0.1</field>
+            <next>
+              <block type="inf_loop">
+                <statement name="LOOP">
+                  <block type="get_ready" id="%I-NF+{%MZtB|+=W[olT">
+                  <next>
+                      <block type="controls_if" id="%!=7eIL*GXM]J](C[r_;">
+                        <value name="IF0">
+                          <block type="chaser_else" id="po4i%s+z[ex[#-Rxm;y%">
+                            <field name="direction">left</field>
+                            <field name="condition">stone</field>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="walk" id="5:tQ$m5XCJi.etL(AkM-">
+                            <field name="walk">walk_left</field>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="$oCZz`#h2GI`Q#kLZ|fL">
+            <value name="IF0">
+              <block type="main_exe" id="0-~=2P0zC|)uCA!0AAkp"></block>
+            </value>
+            <statement name="DO0">
+              <block type="function_exe" id="ln@h=O_%fyM-c!SnQ~,N">
+                <field name="function_name">main</field>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

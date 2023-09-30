@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CHaser_Lab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.15/bootstrap-native-v4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/blockly_compressed.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/blocks_compressed.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/python_compressed.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/msg/js/ja.js"></script>
+    <script src="Block_Define.js"></script>
+    <script src="Block_Generate.js"></script>
+    <script src="workspace.js" defer></script>
+    <style>
+        #blocklyDiv {
+            height: 90vh;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CHaser_Lab</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-8" id="blocklyDiv"></div>
+            <div class="col-4">
+                <!--<button id="execCode" class="btn btn-primary">実行する</button>-->
+                <button id="showCode" class="btn btn-success">Pythonコードを表示</button>
+                <button id="save" class="btn btn-save">ブロック保存</button>
+                <button id="download" class="btn btn-download">Pythonファイル出力</button>
+                <button id="copy" class="btn btn-copy">コードコピー</button>
+                <form><input type="file" class="btn btn-file" id="file"/></form>
+                <pre id="pre1"></pre>
+                <pre><code class="Python" id='python'></code></pre>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+h1{
+    text-align: center;
+}
+
+.btn-success{
+    color: #000;
+}
+
+.btn-download {
+    color: #000;
+    background-color: #6495ed;
+    border-color: #6495ed;
+}
+
+.btn-download:hover {
+    background-color: #4169e1;
+    color: #fff;
+    border-color: #4169e1;
+}
+
+.btn-save{
+    color: #000;
+    background-color: #f08080;
+    border-color: #f08080;
+}
+
+.btn-save:hover {
+    background-color: #fa8072;
+    color: #fff;
+    border-color: #fa8072;
+}
+
+.btn-copy{
+    color: #000;
+    background-color: #ffe4b5;
+    border-color: #ffe4b5;
+}
+
+.btn-copy:hover {
+    background-color: #ffdab9;
+    color: #fff;
+    border-color: #ffdab9;
+}
+.btn{
+    margin: 1px;
+}
+
+/* スタイルを変更したい要素に対するスタイル */
+.btn-file {
+    /* 任意のスタイルを指定 */
+    /* 例えば、ボーダーと背景色を設定 */
+    border: 2px solid #28a745;
+    background-color: #fff;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    color: #28a745;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* マウスオーバー時のスタイル */
+.btn-file:hover {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+}
+
+

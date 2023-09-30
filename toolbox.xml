@@ -1,0 +1,211 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  <category name="設定・関数" colour="#5b80a5">
+    <block type="init_func">
+      <field name="port">2009</field>
+      <field name="user">sample</field>
+      <field name="host">127.0.0.1</field>
+    </block>
+    <block type="import">
+      <field name="import">CHaser</field>
+    </block>
+    <block type="import">
+      <field name="import">random</field>
+    </block>
+    <block type="function">
+      <field name="function_name">main</field>
+    </block>
+    <block type="function_exe">
+      <field name="function_name">main</field>
+    </block>
+  </category>
+  <category name="もし" colour="ff00ff">
+    <block type="controls_if"></block>
+    <block type="chaser_if">
+      <field name="direction">left</field>
+      <field name="condition">enemy</field>
+    </block>
+    <block type="chaser_else">
+      <field name="direction">left</field>
+      <field name="condition">enemy</field>
+    </block>
+    <block type="logic_compare">
+      <field name="OP">EQ</field>
+    </block>
+    <block type="logic_operation">
+      <field name="OP">AND</field>
+    </block>
+    <block type="logic_negate"></block>
+    <block type="logic_boolean">
+      <field name="BOOL">TRUE</field>
+    </block>
+    <block type="logic_null"></block>
+  </category>
+  <category name="行動" colour="#9acd32">
+    <block type="get_ready"></block>
+    <block type="walk">
+      <field name="walk">walk_left</field>
+    </block>
+    <block type="put">
+      <field name="put">put_left</field>
+    </block>
+    <block type="search">
+      <field name="search_option">search_left</field>
+    </block>
+    <block type="look">
+      <field name="look">look_left</field>
+    </block>
+  </category>
+  <category name="くりかえし" colour="#5ba55b">
+    <block type="inf_loop"></block>
+    <block type="controls_repeat_ext">
+      <value name="TIMES">
+        <shadow type="math_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="controls_whileUntil">
+      <field name="MODE">WHILE</field>
+    </block>
+    <block type="controls_for">
+      <field name="VAR" id="Th04@exnnwO5eSTz91`,">i</field>
+      <value name="FROM">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <value name="TO">
+        <shadow type="math_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+      <value name="BY">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="controls_forEach">
+      <field name="VAR" id="cClM?lU[y5{9ubaO7p`A">j</field>
+    </block>
+    <block type="controls_flow_statements">
+      <field name="FLOW">BREAK</field>
+    </block>
+  </category>
+  <category name="変数" colour="#000000">
+    <block type="variables_set">
+      <field name="VAR" id="Y:na$=%tJ~E02lO*]#3D">value</field>
+    </block>
+    <block type="math_change">
+      <field name="VAR" id="Y:na$=%tJ~E02lO*]#3D">value</field>
+      <value name="DELTA">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="variables_get">
+      <field name="VAR" id="Y:na$=%tJ~E02lO*]#3D">value</field>
+    </block>
+  </category>
+  <category name="数学" colour="#5b67a5">
+    <block type="math_number">
+      <field name="NUM">0</field>
+    </block>
+    <block type="math_arithmetic">
+      <field name="OP">ADD</field>
+      <value name="A">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <value name="B">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_single">
+      <field name="OP">ROOT</field>
+      <value name="NUM">
+        <shadow type="math_number">
+          <field name="NUM">9</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_trig">
+      <field name="OP">SIN</field>
+      <value name="NUM">
+        <shadow type="math_number">
+          <field name="NUM">45</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_constant">
+      <field name="CONSTANT">PI</field>
+    </block>
+    <block type="math_number_property">
+      <mutation divisor_input="false"></mutation>
+      <field name="PROPERTY">EVEN</field>
+      <value name="NUMBER_TO_CHECK">
+        <shadow type="math_number">
+          <field name="NUM">0</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_round">
+      <field name="OP">ROUND</field>
+      <value name="NUM">
+        <shadow type="math_number">
+          <field name="NUM">3.1</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_on_list">
+      <mutation op="SUM"></mutation>
+      <field name="OP">SUM</field>
+    </block>
+    <block type="math_modulo">
+      <value name="DIVIDEND">
+        <shadow type="math_number">
+          <field name="NUM">64</field>
+        </shadow>
+      </value>
+      <value name="DIVISOR">
+        <shadow type="math_number">
+          <field name="NUM">10</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_constrain">
+      <value name="VALUE">
+        <shadow type="math_number">
+          <field name="NUM">50</field>
+        </shadow>
+      </value>
+      <value name="LOW">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <value name="HIGH">
+        <shadow type="math_number">
+          <field name="NUM">100</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_random_int">
+      <value name="FROM">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <value name="TO">
+        <shadow type="math_number">
+          <field name="NUM">100</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="math_random_float"></block>
+  </category>
+</xml>
